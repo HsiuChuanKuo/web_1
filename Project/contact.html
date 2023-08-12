@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(228, 221, 228);
+        }
+        nav {
+            font-weight: bold;
+            text-align: center;
+            text-decoration: underline;
+        }
+        h1 {
+            font-family: Georgia, "Times New Roman", serif;
+            color: black;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        h2 {
+            font-family: Georgia, "Times New Roman", serif;
+            color: black;
+            text-align: center;
+        }
+        h3 {
+            font-family: Georgia, "Times New Roman", serif;
+            color: #000033;
+            text-align: center;
+        }
+        p {
+            font-family: Georgia, "Times New Roman", serif;
+            color: #000033;
+            text-align: center;
+        }
+        footer {
+            font-size: 75%;
+        }
+        html, body {
+            height: 100%;
+        }
+        a:hover, a:active {
+            text-decoration: underline;
+        }
+        .container1 {
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main{
+            justify-content: center;
+        }
+        .footer{
+            font-family: Georgia, "Times New Roman", serif;
+            text-align: center;
+        }
+        form label {
+            width: 110px;
+            text-align: right;
+            display: inline-block;
+        }
+
+        form input {
+            padding: 8px;
+            margin: 8px 0;
+        }
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 75vh;
+        }
+    </style>
+    <script>
+        function clearForm() {
+            document.getElementById("name").value = "";
+            document.getElementById("phone").value = "";
+            document.getElementById("address").value = "";
+            document.getElementById("city").value = "";
+            document.getElementById("postal_code").value = "";
+            document.getElementById("province").value = "";
+            document.getElementById("age").value = "";
+            document.getElementById("password").value = "";
+            document.getElementById("email").value = "";
+        }
+    </script>
+    <script src="contact.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Contact</h1>
+        <br/>
+        <h3>Help you to find your ideal home</h3>
+        <hr/>
+    </div>
+    <div class="footer">
+        <a href="PropertyListing_1.html">Property Listing_1</a>&nbsp;&nbsp;
+        <a href="PropertyListing_2.html">Property Listing_2</a>&nbsp;&nbsp;
+        <a href="PropertyListing_3.html">Property Listing_3</a>&nbsp;&nbsp;
+        <a href="PropertiesforSale.html">Properties for Sale</a>&nbsp;&nbsp;
+        <a href="contact.html">Contact</a>&nbsp;&nbsp;
+        <a href="siteMap.html">Site Map and Credits Page</a>&nbsp;&nbsp;
+        <a href="index.html">Home</a>  
+    </div>  
+    <div class="form-container">
+        <form>
+            <label for="firstname">First Name：</label>
+            <input type="text" id="name" name="name" required>
+            <br/>
+            <label for="lastname">Last Name：</label>
+            <input type="test" id="phone" name="phone" required>
+            <br/>
+            <label for="address">Address：</label>
+            <input type="text" id="address" name="address" required>
+            <br/>
+            <label for="city">City：</label>
+            <input type="text" id="city" name="city" required>
+            <br/>
+            <label for="postal_code">Postal Code：</label>
+            <input type="text" id="postal_code" name="postal_code" required>
+            <br/>
+            <label for="province">Province：</label>
+            <input type="text" id="province" name="province" required>
+            <br/>
+            <label for="age">Age：</label>
+            <input type="number" id="age" name="age" required>
+            <br/>
+            <label for="password">Password：</label>
+            <input type="password" id="password" name="password" required>
+            <br/>
+            <label for="confirm">Confirm：</label>
+            <input type="password" id="confirm" name="confirm" required>
+            <br/>
+            <label for="email">Email：</label>
+            <input type="email" id="email" name="email" required>
+            <br/>
+            
+            <!--Button-->
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="submit" value="Register Now">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="button" value="Clear Form"onclick="clearForm()">
+            <br/>
+            
+        </form>
+    </div>
+    <hr/>
+    <p>
+        ©Copyright Hsiu-Chuan Kuo's Real Estate
+    </p>
+</body>
+</html>
